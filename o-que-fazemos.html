@@ -10,6 +10,7 @@
   <header>
     <div class="container">
       <h1>Abrigo Lar da Esperança</h1>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -18,7 +19,6 @@
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
-      
     </div>
   </header>
 
@@ -44,5 +44,13 @@
   <footer>
     <p>&copy; 2025 Abrigo Lar da Esperança. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

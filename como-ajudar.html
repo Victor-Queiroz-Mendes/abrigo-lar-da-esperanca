@@ -10,6 +10,7 @@
   <header>
     <div class="container">
       <h1>Abrigo Lar da Esperança</h1>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -18,7 +19,6 @@
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
-      
     </div>
   </header>
 
@@ -26,23 +26,32 @@
     <section class="secao">
       <h2>Como Ajudar</h2>
       <p>
-        Sua ajuda transforma vidas! Existem diversas formas de contribuir com o Abrigo Lar da Esperança e fazer parte da mudança na vida de muitas pessoas.
+        O Abrigo Lar da Esperança depende da colaboração de pessoas como você para continuar transformando vidas. Existem diversas formas de contribuir com a nossa missão de acolhimento e reintegração social.
       </p>
     </section>
 
     <section class="secao">
-      <h3>Você pode contribuir de várias formas:</h3>
+      <h3>Você pode ajudar das seguintes formas:</h3>
       <ul>
-        <li><strong>Doações financeiras:</strong> Ajude com qualquer valor para mantermos nossas atividades. Entre em contato para saber como doar.</li>
-        <li><strong>Doações de alimentos, roupas e materiais de higiene:</strong> Recebemos itens novos ou em bom estado.</li>
-        <li><strong>Voluntariado:</strong> Se você deseja doar tempo e talento, temos diversas frentes de trabalho voluntário, como cozinha, atendimento, oficinas, entre outros.</li>
-        <li><strong>Parcerias:</strong> Empresas, igrejas, escolas e organizações podem apoiar com recursos, serviços ou contratação de acolhidos.</li>
+        <li><strong>Doações financeiras:</strong> Ajude a manter nossas atividades com contribuições mensais ou pontuais. Toda ajuda é bem-vinda!</li>
+        <li><strong>Doações de itens:</strong> Aceitamos alimentos, roupas, calçados, produtos de higiene e limpeza.</li>
+        <li><strong>Voluntariado:</strong> Participe com seu tempo e talento em atividades como oficinas, atendimento, apoio psicológico ou serviços gerais.</li>
+        <li><strong>Parcerias:</strong> Empresas e instituições podem apoiar com recursos, serviços ou oportunidades para os acolhidos.</li>
       </ul>
     </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Abrigo Lar da Esperança. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
